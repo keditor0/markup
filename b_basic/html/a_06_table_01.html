@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- a_06_table_01.html -->
+<html lang="ko-kr">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+    table {
+      width: 500px; /* 1cm -> ?px */
+      height: auto; min-height: 100px;
+      /* background-color: rgb(202, 228, 240); (ctrl+space -> 색상목록) */
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(94, 91, 91);
+      border-spacing: 0; /*선 사이에 뜨는거 0줘서 붙이기 */
+        border-collapse:collapse;
+    }
+    tr {
+      width: 100%; height: 50px;
+    }
+    th, td{
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(94, 91, 91);
+      /*
+      text-align: center; 가운데로 정렬
+      font-weight: bold; 폰트 굵기
+      */
+    }
+
+     /* th {text-align: left; } */
+    thead {background-color: khaki;}
+
+  </style>
+</head>
+<body>
+  <h1><a href="../index.html">웹기초</a></h1>
+  <h2>테이블 이해하기</h2>
+
+
+  <!-- 동일한 거 선택할 때는 필요한 글자를 마우스로 선택하고 컨트롤+D 여러번-->
+  <!-- td중 제목부분 구분위해 th로: 굵어지고 가운데 정렬됨-->
+  <table>
+      <caption>테이블 구조 기본 형태 이해하기</caption>
+      <thead>
+        <tr> 
+          <th>ID no.</th><th>성/th><th>이름</th>이메일<th>작성일</th><th>작성일</th>
+        </tr>
+    </thead>
+     <tbody>
+      <tr>
+        <th>001</th><td>Mark</td><td>Octo</td><td><a href="#">Mark@gmai.com</a></td><td>01.13</td>
+      </tr>
+      <tr>
+        <th>002</th><td>Json</td><td>Airdays</td><td><a href="#">Json@gmai.com</a></td><td>01.13</td>
+      </tr>
+      <tr>
+        <th>003</th><td>Larry</td><td>Visualy</td><td><a href="#">Larry@gmai.com</a></td><td>01.13</td>
+      </tr>
+      <tr>
+        <th>004</th><td>Gray</td><td>Bootlamp</td><td><a href="#">Gray@gmai.com</a></td><td>01.13</td>
+      </tr>
+      <tr>
+        <th>005</th><td>Kim</td><td>JY</td><td><a href="#">Kim@gmai.com</a></td><td>01.13</td>
+      </tr>
+     </tbody>
+
+<!-- 가계부 같은 거 쓸 때
+     <tfoot>
+       <tr>
+         <td>tfoot-1</td>  셀의 개수가 일치해야함
+         <td>tfoot-2</td>
+         <td>tfoot-3</td>
+         <td>tfoot-4</td>
+         <td>tfoot-5</td>
+       </tr>
+     </tfoot>
+     -->
+
+  </table>
+</body>
+</html>
