@@ -6,7 +6,7 @@
   <title>웹기초</title>
   <style>
     table {
-      width: 500px; /* 1cm -> ?px */
+      width: 700px; /* 1cm -> ?px */
       height: auto; min-height: 100px;
       /* background-color: rgb(202, 228, 240); (ctrl+space -> 색상목록) */
       border-width: 1px;
@@ -29,8 +29,14 @@
     }
 
      /* th {text-align: left; } */
-    thead {background-color: khaki;}
-
+    thead {color:white; background-color: rgb(212, 192, 11);}
+    tbody {background-color: rgb(247, 245, 232);}
+    .line_impact {background-color: rgb(252, 250, 162); height: 60px;}
+    .cell_01 {width: 80px;}
+    .cell_02 {width: 120px;}
+    .cell_03 {width: 120px;}
+    .cell_04 {width: 300px;}
+    .cell_05 {width: 80px;}  /* 전체 테이블 값이 700px 이라 맞춰서 조정됨, 마지막 값은 안쓰기도  */
   </style>
 </head>
 <body>
@@ -40,28 +46,62 @@
 
   <!-- 동일한 거 선택할 때는 필요한 글자를 마우스로 선택하고 컨트롤+D 여러번-->
   <!-- td중 제목부분 구분위해 th로: 굵어지고 가운데 정렬됨-->
+
+
   <table>
       <caption>테이블 구조 기본 형태 이해하기</caption>
+
+      <colgroup>
+      <col class="cell_01">
+      <col class="cell_02" span="2">
+      <!-- <col class="cell_03"> -->
+      <col class="cell_04">
+      <col class="cell_05">
+      </colgroup>
       <thead>
-        <tr> 
+        <tr>
           <th>ID no.</th><th>성/th><th>이름</th>이메일<th>작성일</th><th>작성일</th>
         </tr>
     </thead>
      <tbody>
-      <tr>
-        <th>001</th><td>Mark</td><td>Octo</td><td><a href="#">Mark@gmai.com</a></td><td>01.13</td>
+      <tr class="line_impact">
+        <th>001</th>
+        <td colspan="2">Mark Octo</td>
+        <td><a href="#">Mark@gmai.com</a></td>
+        <td>01.13</td>
       </tr>
       <tr>
-        <th>002</th><td>Json</td><td>Airdays</td><td><a href="#">Json@gmai.com</a></td><td>01.13</td>
+        <th>002</th>
+        <td>Json</td>
+        <td>Airdays</td>
+        <td><a href="#">Json@gmai.com</a></td>
+        <td>01.13</td>
+      </tr>
+      <tr class="line_impact">
+        <th>003</th>
+        <td>Larry</td>
+        <td>Visualy</td>
+        <td><a href="#">Larry@gmai.com</a></td>
+        <td>01.13</td>
       </tr>
       <tr>
-        <th>003</th><td>Larry</td><td>Visualy</td><td><a href="#">Larry@gmai.com</a></td><td>01.13</td>
+        <th>004</th>
+        <td>Gray</td>
+        <td>Bootlamp</td>
+        <td><a href="#">Gray@gmai.com</a></td>
+        <td>01.13</td>
+      </tr>
+      <tr class="line_impact">
+        <th>005</th>
+        <td rowspan="2">Kim</td>
+        <td rowspan="2">JY</td>
+        <td><a href="#">Kim@gmai.com</a></td>
+        <td>01.13</td>
       </tr>
       <tr>
-        <th>004</th><td>Gray</td><td>Bootlamp</td><td><a href="#">Gray@gmai.com</a></td><td>01.13</td>
-      </tr>
-      <tr>
-        <th>005</th><td>Kim</td><td>JY</td><td><a href="#">Kim@gmai.com</a></td><td>01.13</td>
+        <th>006</th>
+        <td><a href="#">Kim@gmai.com</a></td>
+        <td>01.13</td>
       </tr>
      </tbody>
 
