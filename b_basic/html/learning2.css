@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 1주차 과제 */
+
+table {
+  width: 800px; height: 350px;
+  border-width: 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead { background-color: rgb(248, 127, 79); color: white;  }
+
+tr { width: 100%; height: 25px; border-bottom: 1px solid #ccc;}
+  td { border: 1px solid #ccc; }
+
+.no1 { text-align: right;}
+.no2 { text-align: center;}
+
+.line_impact {background-color: #fdd; }
+.line_bottom { border-bottom: 3px solid rgb(233, 72, 72); }
+
+
+/* .th_1 {width: 50px;}
+.th_2 {width: 130px;}
+.th_3 {width: 100px;}
+.th_4 {width: 100px;}
+.th_5 {width: 360px;}
+.th_6 {width: 60px;}
+ 흐으으음?? */
+
+
+
+
+
+

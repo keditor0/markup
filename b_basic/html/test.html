@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- 1주차 과제 테이블 만들기-->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -34,7 +35,8 @@
     }
 
     .line_impact {
-      background-color: rgb(191, 219, 255);
+      background-color: #adf;
+      
         }
 
         .cell_1 {width : 50px;  height: 75px;}
@@ -44,8 +46,10 @@
         .cell_5 {width : 360px; }
         .cell_6 {width : 60px; }
 
-    .move_1 {
+    .t_b {
       text-align: right;
+      border-bottom: 3px solid rgb(15, 15, 15);
+      
     }
     
   </style>
@@ -78,20 +82,20 @@
  
  <tbody>
    <!-- 첫번째 로켓 -->
-  <tr>
-    <td rowspan="3" class="move_1">1</td>
-        <th rowspan="3"><img src="../img/rockit.png" alt="로켓"></th>
+  <tr >
+    <td rowspan="3" >1</td>
+        <th rowspan="3" ><img src="../img/rockit.png" alt="로켓"></th>
         <td >rockit</td>
         <td>8.14</td>
         <td>웹서비스</td>
-        <td rowspan="2"><a href="#">지원</a></td>
+        <td rowspan="2" ><a href="#">지원</a></td>
   </tr>
   
   <tr>
     <td colspan="3">프론트엔트 개발자 최소 4,000만원/신입,경력</td>
   </tr>
 
-  <tr>
+  <tr class="t_b">
     <td colspan="4" >클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.</td>
   </tr>
 
