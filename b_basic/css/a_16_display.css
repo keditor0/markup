@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* a_16_dispaly.css */
+body,h1,h2,ul {margin: 0; padding: 0;}
+li{list-style: none;}
+
+#wrap {
+  width: 900px; height: auto;
+  margin: auto; padding: 10px;
+  background-color: #ccc;
+}
+
+.part {
+  width: 95%; height: auto;
+  margin: auto;
+  background-color: rgb(240, 236, 206);
+}
+
+.exam {width: 100%; height: auto;}
+.exam:after,
+.exam::after{
+  content:""; display: block;
+  width: 100%; height: 0; clear:both;
+}
+  li {
+    float:left;
+    width: 100px; height: 100px;
+    padding: 10px; box-sizing: border-box;
+    font-size: 1.2rem; font-weight: bold;
+    background-image: linear-gradient(45deg,#adf,#fc7);
+    background-color: #fea;
+  }
+
+  li > a {
+    display: block;
+    width: 100%; height: 100%;
+  }
+
+  .block {display: block;}
+  .none {display: none;}
+
+  .visible {visibility: visible;}
+  .hidden {visibility: hidden;} /*형태가 있었음을 언급하는 차이*/
+
+  .opacity_1 {opacity: 1;}
+  .opacity_5 {opacity: 0.5;}
+  .opacity_0 {opacity: 0;} /*투명도를 설정한것이기 때문에 기능은 적용*/
+
+  .transparent { background-image: none; background-color:transparent;}
+  /* .transparent > a {color: inherit; width: inherit;} */
+   /*inherit 부모의 수치를 그대로 사용 */
+  .alpha_01 { background-image: none; background-color: #a5f3d744;} /* 끝에 투명도 적용#a5f3d7(44) */ 
+  .alpha_02 { background-image: none; background-color: rgba(255, 0, 255,0.5);}
+  .alpha_03 { background-image: none; background-color: hsla(90, 100, 50%,0.5);}
+
+  .alpha_01 > a  { background-color: rgba(255, 0, 50, 0.5);}
+  .alpha_02 > a { background-color: rgba(255, 0, 50, 0.5);}
+  .alpha_03 > a  { background-color: rgba(255, 0, 50, 0.5);}
+
+  
