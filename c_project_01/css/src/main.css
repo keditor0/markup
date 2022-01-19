@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /* main.css */
-/* reset.css_____________________________________________________________ */
+/* reset.cs    s===========초기 셋팅============================================ */
 body {margin: 0;}
+h1,h2,h3,h4,h5,h6 {margin: 0;}
+ul,ol,dl,li,dt,dd {margin: 0; padding: 0;}
+ul,ol,li {list-style: none;}
 
-/* common.css ___공동된 기능_________________________________________________ */
+/* common.css ========공동된 기능===================================================== */
 .max_width_01 {
   width: 95%; min-width: 940px; max-width: 1280px;
   margin: auto; }
@@ -12,7 +15,7 @@ body {margin: 0;}
 
 
 
-/* design______________________________________________________ */
+/* design =======디자인=============================================== */
 #wrap {
   width: 100%; min-width: 960px; /*min-width: 1440px;*/
   height: auto; min-height: 500px;
