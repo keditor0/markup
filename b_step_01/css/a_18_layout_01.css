@@ -87,19 +87,15 @@ h3 {width: 100%; height: 25px;
 
 /* box_06 --------------------------------------------------------------------- */
 
+.box_06 {width: 600px; height: auto; margin: auto;}
+  .box_06 > div {width: 100%; height: 200px;}
 
-.box_06 {width: 600px; height: auto; margin: auto; margin-top: 10px;  }
-.box_06 > div {width: 100%; height: 200px; }
-  .inner_01 {color :#fff; background-color: #456ea2;}
-  .inner_02 {background-color: #fff9eb;}
-  .inner_03 {background-color: #ffcf5d;}
+  .inner_01 {height:200px; color :#fff; background-color: #456ea2;}
+  .inner_01 > insert_01{height:200px}
+ 
 
-  .box_06 .insert{height: 200px;
-    width: 60%;
-     margin: auto;padding: 10px; box-sizing: border-box;
-     color: #fff; font-size: 20px;
-    }
+  .inner_02 { background-color: #fff9eb;}
+  
 
-    .box_06 .insert1 {float: left;}
-
-    
+  .inner_03 { background-color: #ffcf5d;}
+ 
