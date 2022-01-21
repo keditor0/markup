@@ -125,7 +125,7 @@
   margin-left: 10px;
   width: 40px; height: 30px;
   background-color: rgb(248, 124, 124);
-} /* 과재____________________________________________*/
+} /* indicator 과제____________________________________________*/
 
 .area_content{
   width: 940px; height: 370px;
@@ -151,7 +151,7 @@
   background-color: #aaa;}
 #subBox > .area{
   position: absolute; bottom: 0; left: 0; right: 0;
-  height: 300px;
+  width: 1100px; height: 300px;
   margin: auto;
   background-color: #ddd;
 }
@@ -176,9 +176,8 @@
   padding-top: 175px; box-sizing: border-box;
   background-color: #eee;}
 #bestBox > .area {
-    height: 380px;
-    
-    background-color: #aaa;
+  width: 1100px; height: 380px;
+  background-color: #aaa;
   }
 
 .best_area{
@@ -230,7 +229,26 @@
   padding-top: 75px; box-sizing: border-box;
   background-color: #ccc;}
 #galleryBox .area_title { background-color: #fff;}
-#galleryBox .area_content {height: 420px; background-color: #777;}
+
+#galleryBox .area_content {
+  position: relative;
+  height: 420px;
+  background-color: #777;}
+.area_content .gal_area_img {
+  float: left;
+  width: 540px; height: 100%;
+  background-color: rgb(71, 221, 171);
+}
+.area_content .gal_area_list {
+  float: right;
+  position: absolute; bottom: 0; right: 0;
+  width: 320px; height: 270px;
+  background-color: brown;
+}
+
+
+
+
 
 
 /* #sponsorBox_______________________________________________________________ */
@@ -238,10 +256,24 @@
   width: 100%; height: 100px;
   padding: 10px 0; box-sizing: border-box;
   background-color: #999;}
+
 .sponsor_area{
-  height: 80px;
+  
+  width: 940px; height: 80px;
   background-color: #fff;
+
 }
+
+.sponsor_area ul {width:100%; height: 100%; overflow: hidden;}
+.sponsor_area li {
+  float: left;
+  width: 140px; height: 100%;
+  margin-left: 20px;
+  background-color: aqua;
+
+}
+
+
 
 /* #footBox_______________________________________________________________ */
 #footBox {
@@ -249,9 +281,7 @@
   padding-top: 68px; box-sizing: border-box;
   background-color: #777;}
 
-.area_foot {
-  height: auto;
- }  
+.area_foot {width: 940px;  height: auto; }  
  
   .info_logo {
     width: 120px; height: 70px;
@@ -260,8 +290,17 @@
     }
   .info_conpany {
     width: 100%; height: 135px;
-    background-color: #aaa;
+   
     }
+
+.info_area_01 {
+  float: left; 
+  width: 500px; height: 200px;
+  background-color: coral;}
+.info_area_02 {
+  float: right; margin-top: 40px;
+  width: 200px; height: 160px;
+  background-color: coral;}
 
 
     /* --------------------------------------------------------------- */
