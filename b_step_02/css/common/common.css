@@ -7,6 +7,10 @@
   .none {display: none;}
 
 
+  .first_margin > li:first-child {margin-left: 0;}
+  .last_margin > li:first-child {margin-left: 0;}
+
+
   /* 코드 예제 세팅 */
 
 

@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6,p,pre,q,blockquote,ul,ol,li,dl,dt,dd,img {
   vertical-align: baseline;
 }
 
-ul,ol {list-style: none;}
+ul,li, ol {list-style: none;}
 
 hr {
   margin: 0; border: 0;
