@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap"
         rel="stylesheet">
+<link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/main_v2.css">
@@ -17,28 +19,32 @@
 
     <header id="headBox">
       <div class="area_head">
-        <h1 id="logo">osam</h1>
+        <h1 id="logo" class="blind_area">
+          <a href="../index.html" title="osam coffee">
+            <span class="blind">osam</span>
+          </a>
+        </h1>
         <nav id="navBox">
          <h2 class="blind">page navigation</h2>
          <div class="unb">
           <h3 class="blind">사용자 설정 네비게이션</h3>
-          <ul class="clearfix first_margin">
-            <li>unb_01</li>
-            <li>unb_02</li>
-            <li>unb_03</li>
-            <li>unb_04</li>
+          <ul class="clearfix">
+            <li><a href="#">한국어</a></li>
+            <li><a href="#">sign in</a></li>
+            <li><a href="#">sign up</a></li>
+            <li><a href="#">site map</a></li>
           </ul>
           </div>
 
          <div class="gnb">
           <h3 class="blind">페이지 전체 네비게이션</h3>
           <ul class="clearfix first_margin">
-            <li>gnb_01</li>
-            <li>gnb_02</li>
-            <li>gnb_03</li>
-            <li>gnb_04</li>
-            <li>gnb_05</li>
-            <li>gnb_06</li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">gift</a></li>
+            <li><a href="#"><abbr title="frequently asked questions">FAQ </abbr></a></li>
+            <li><a href="#">event</a></li>
+            <li><a href="#">notice</a></li>
           </ul>
          </div>
         </nav>
@@ -47,35 +53,53 @@
 
     <section id="slideBox">
       <h2 class="blind">주요 광고영역</h2>
-      <div class="slide_btn">
-        <button type="button" class="next">다음 내용 보기</button>
-        <button type="button" class="prev">이전 내용 보기</button>
+      <div class="slide_btn blind_area">
+        <button type="button" class="next"><span>다음 내용 보기</span></button>
+        <button type="button" class="prev"><span>이전 내용 보기</span></button>
       </div>
-      <div id="adCon_01">
-        adCon_01
+      <div class="slide_area">
+        <div id="adCon_01" class="slide_content">
+          <div class="slide_content_part">
+            <h3>Banner Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Est laborum repellat iure nihil a aperiam.ipsum dolor sit amet.</p>
+            <div class="link">
+              <a href="#">
+                바로가기
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="slide_img_part">
+            <figcaption class="blind">슬라이드 부연 제목</figcaption>
+            <div class="slide_01">
+              <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+            </div>
+          </figure>
+        </div>
       </div>
     </section> <!-- slideBox____________________________________________ -->
     
     
     
     <article id="newBox">
-      <h2 class="area_title">area_title</h2>
+      <h2 class="area_title">최신상품</h2>
 
       <div class="area_indicator first_margin">
         <!-- area_indicator -->
-      <ul>
-        <li><button>A</button></li>
-        <li><button>B</button></li>
-        <li><button>C</button></li>
+      <ul class="indi blind_area">
+        <li><a href="#"><span>최선 첫번째 내용</span></a></li>
+        <li><a href="#"><span>최선 두번째 내용</span></a></li>
+        <li><a href="#"><span>최선 세번째 내용</span></a></li>
       </ul>
       </div>
 
-      <div class="area_content first_margin">
+      <div class="area_content first_margin blind_area">
         <!-- area_content -->
       <ul>
-        <li><a href="#">card_01</a></li>
-        <li><a href="#">card_02</a></li>
-        <li><a href="#">card_03</a></li>
+        <li><a href="#"><span>card_01</span></a></li>
+        <li><a href="#"><span>card_02</span></a></li>
+        <li><a href="#"><span>card_03</span></a></li>
       </ul>
       </div>
 
@@ -88,16 +112,18 @@
     <section id="subBox">
       <div class="max_width_01 area">
         <div class="sub_area">
-          <h2>보조 광고영역</h2>
+          <h2>Banner Title</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             consequuntur eveniet! Quas ut maxime suscipit reiciendis consequuntur
-            facere, impedit optio animi tempora recusandae, dicta adipisci repellat hic?
-             Fuga, tempora incidunt!</p>
-          <div class="sub_area_btn">바로가기A</div>
-       </div>
+            facere, impedit optio </p>
+            <u class="sub_area_btn">
+              <li><a href="#">바로가기</a></li>
+              <li><a href="#">바로가기</a></li>
+            </u>
+        </div>
 
-        <div class="sub_area_img">
-          이미지 영역
+        <div class="sub_area_img blind_area">
+          <a href="#"><span>배너 이미지 영역</span></a>
         </div>
       </div>
     </section><!-- // #subBox_____________________________________________ -->
@@ -106,17 +132,23 @@
     <article id="bestBox">
       <div class="max_width_01 area">
         <div class="best_area first_margin">
-          <h2>인기 메뉴 리스트</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, et?</p>
-          <div class="best_btn"><a href="#">&#60;</a></div>
-          <div class="more_btn"><a href="#">&#62;</a></div>
+          <h2>인기 상품<br />List</h2>
+          <p>Lorem ipsum dolor sit amet consectetur ipsum dolor ipsum dolor  adipisicing elit. Labore, et?</p>
+          <ul>
+            <li><a href="#">&#60;</a></li>
+            <li><a href="#">&#62;</a></li>
+            <a href="#">+더보기</a>
+          </ul>
+          
         </div>
 
-        <div class="best_card_list first_margin">
+        <div class="best_card_list first_margin blind_area">
           <ul>
-            <li>best_card_01</li>
-            <li>best_card_02</li>
-            <li>best_card_03</li>
+            <div class="listBox">
+              <li><a href="#"><span>best_card_01</span></a></li>
+              <li><a href="#"><span>best_card_02</span></a></li>
+              <li><a href="#"><span>best_card_03</span></a></li>
+            </div>
           </ul>
         </div>
       </div>
@@ -124,7 +156,7 @@
 
 
     <article id="galleryBox">
-      <h2 class="max_width_01 area_title">area_title</h2>
+      <h2 class="max_width_01 area_title">추천 미리보기</h2>
       <!-- //area_title______________________________ -->
       <div class="area_content">
         
@@ -133,7 +165,14 @@
         </div>
 
         <div class="gal_area_list">
-                   
+          <ul>
+            <li class="service"><span>service</span> </li>
+            <li class="service"><span>service</span> </li>
+            <li class="service"><span>service</span> </li>
+            <li class="service"><span>service</span> </li>
+          </ul>
+              
+          
         </div>
         
       </div>
@@ -147,17 +186,14 @@
       <h2 class="blind">후원사</h2>
       <div class="sponsor_area max_width_01 first_margin">
         <!-- sponsor_area -->
-        <ul>
-          <li>sponsor_01</li>
-          <li>sponsor_02</li>
-          <li>sponsor_03</li>
-          <li>sponsor_04</li>
-          <li>sponsor_05</li>
-          <li>sponsor_06</li>
-          <li>sponsor_07</li>
-          <li>sponsor_08</li>
-          <li>sponsor_09</li>
-          <li>sponsor_10</li>
+        <ul class="is blind_area">
+          <li><a href="#"><span>후원사 로고 1</span></a></li>
+          <li><a href="#"><span>후원사 로고 2</span></a></li>
+          <li><a href="#"><span>후원사 로고 3</span></a></li>
+          <li><a href="#"><span>후원사 로고 4</span></a></li>
+          <li><a href="#"><span>후원사 로고 5</span></a></li>
+          <li><a href="#"><span>후원사 로고 6</span></a></li>
+          
          
         </ul>
       </div>
@@ -166,20 +202,55 @@
 
     <footer id="footBox">
      <div class="area_foot max_width_01">
-      <h2 class="info_logo">오삼커피 회사 정보</h2>
+      <h2 class="info_logo blind_area"><a href="#"><span>오삼커피 회사 정보</span></a></h2>
       <div class="info_conpany">
         
-        <div class="info_area_01">
-          info_area_01
-        </div>
-
-        <div class="info_area_02">
-          info_area_01
-        </div>
-      
-        
+        <div class="info_area_01">                     
+             <h3 class="foot_nav blind">사용자 설정 네비게이션</h3>
+             <ul class="clearfix nav_foot">
+               <li><a href="#">이용약관</a></li>
+               <li><a href="#">개인정보처리방침</a></li>
+               <li><a href="#">운영정책</a></li>
+               <li><a href="#">권리침해신고안내</a></li>
+               <li><a href="#">공지사항</a></li>
+               <li><a href="#">Contact Us</a></li>
+             </ul>
+             <br />
+             <div class="foot_info">
+              <p>서울특별시 강남구 논현동 000 MEGA빌딩(서울특별시 강남구 논현동 000-00)
+                <br />
+                tel:02-000-0000 | fax: 02-000-0001
+                <br />
+                사업자등록번호:100-00-00000 |통신판매업 신고 : 강남 제 000000호
+                <br />
+                대표이사 :000
+              </p>
+             </div>
+             <div class="foot_info">
+               <p>coffinx Corp. All rights reserved.</p>
+             </div>
       </div>
-     </div>
+
+      <div class="info_area_02">
+        <div class="info_sns blind_area">
+          <a href="#"><span>sns_logo</span> </a>
+        
+        
+        <ul>
+          <li>Family site</li>
+          <li>content</li>
+        </ul>  
+      </div>
+      
+      </div> <!-- // info_area_02-->
+
+    </div> <!-- //info_conpany-->
+        
+
+        
+      
+
+     </div><!--// area_foot max_width_01-->
     </footer><!-- // #footBox_____________________________________________ -->
 
 
