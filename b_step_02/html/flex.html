@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--flex.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="../font/fontawesome/fontawesome-free-5.15.4-web/css/all.css">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/flex.css">
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+  <title>flex</title>
+  <style>
+    #wrap {margin:500px; height: 600px;
+          margin: auto; background-color: #ccc;}
+          .before_box {width: 100%; height: auto; min-height: 100px;
+          box-sizing: border-box;
+          border:1px solid #555;}
+
+    .area {width: 100%; height: auto; min-height: 100px;
+    box-sizing: border-box; margin-bottom: 100px;
+    border: 1px solid #555;}
+
+      .before_box {background-color: #afa;}
+      .before_box h2 {float: left;}
+      .before_box p {float: right;}
+      .before_box:after,
+      .before_box::after { content: ""; display: block; clear: both;}
+
+      .after_box {display: flex; justify-content:space-between;}
+      /* .after_box h2 {order: 1;} */
+
+          .after_box { width: 100%; height: auto; min-height: 100px;
+          box-sizing: border-box;
+          border:1px solid #555;}
+         
+            h2{ width: 200px; height: 150px; background-color: #fa0;}
+            p{ width: 100px; height: 150px; background-color: #59d;}
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="before_box">
+      <div class="area_before_box">
+        <h2>before</h2>
+        <p>content</p>
+      </div>
+
+    </div>
+      <div class="area_after_box">
+        
+      </div>
+
+    <div class="after_box">
+      <h2>after</h2>
+      <p>content</p>
+
+    </div>
+  </div>
+  
+</body>
+</html>
