@@ -1,7 +1,7 @@
 @charset"UTF-8";
 
 /* reset.css */
-body {
+html, body {
   margin: 0; line-height: 100%;
   font-family:'Noto Sans KR', sans-serif;
 }
