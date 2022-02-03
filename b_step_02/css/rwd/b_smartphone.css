@@ -4,7 +4,7 @@
   /* smartphone ------------------------------------------------ */
   @media screen and (max-width:767px){
   /* 기준디바이스 크기 : 320px */
-  /* size / 기준 * 100  => ?vw  */
+  /* size /(나누기) 기준 * 100  => ?vw  */
   
   #wrap {
     width: 100%;  min-width:auto; height:auto;
