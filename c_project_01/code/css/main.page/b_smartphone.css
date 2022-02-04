@@ -1,0 +1,7 @@
+/* main_page/b_smartphone.css */
+
+
+@media screen and (min-width:599px){
+  /* 기준디바이스 크기 : 320px */
+  body {background-color: var(--primary_01);}
+}
