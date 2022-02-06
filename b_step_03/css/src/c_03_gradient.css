@@ -1,0 +1,66 @@
+/* c_03_gradient.css */
+
+.ex_wrap li{
+  width: 100%; height: 600px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  padding: 20px; padding-top: 100px; box-sizing: border-box;
+  font-size: 40px; font-weight: 700;
+  color: #fff;
+  background-color: #777;
+}
+.ex_wrap li:last-child {margin-bottom: 0;}
+/* ------------------------------------------------- */
+
+.linear li:nth-child(1) {
+  background-image: url(../../img/etc/lenear_img.png);
+  background-repeat: repeat-x;
+  background-position: 0 -2px;
+  background-size: auto 105%;
+}
+
+.linear li:nth-child(2) {
+  background-color: #4c49da;
+  background-image: linear-gradient(0deg, #a440f3,#4c49da, #0095e9, #8ce3ff);
+}
+
+.linear li:nth-child(3) {
+  background-color: #4c49da;
+  background-image: linear-gradient(90deg, #a440f3 30%,#4c49da 50%, #0095e9 90%, #8ce3ff);
+}
+
+.linear li:nth-child(4) {
+  background-color: #4c49da;
+  background-image: linear-gradient(45deg, #a440f3 30%,#4c49da 30%, #4c49da 50%, #0095e9 50%, #8ce3ff 90%);
+}
+
+.linear li:nth-child(5) {
+  background-color: #ddd;
+  background-image: linear-gradient(45deg, rgba(255,200,0,0.1) 30%, #0095e9 50%, #8ce3ff 90%), url(../../img/background/mountain.jpg);
+  background-repeat: auto, 50% 50%;
+}
+
+/* -------------------------------------------- */
+.radial li:nth-child(1) {
+  background-image: radial-gradient(#a440f3, #4c49da, #8ce3ff);
+}
+
+.radial li:nth-child(2) {
+  background-image: radial-gradient(closest-side , #f03 10%, #fa0 50%, #8ce3ff 70%);
+}
+
+.radial li:nth-child(3) {
+  background-image: radial-gradient(circle at 0 0%, #f03 10%, #fa0 50%, #8ce3ff 70%);
+}
+
+.radial li:nth-child(4) {
+  background-image: radial-gradient(circle at 0 50%, #f03 10%, #fa0 50%, #8ce3ff 50%);
+}
+
+.radial li:nth-child(5) {
+  background-image: radial-gradient(ellipse at 0 50%, #f03 10%, #fa0 15%, #8ce3ff 30%,  transparent),
+                    radial-gradient(ellipse at 100% 50%, #f03 10%, #fa0 15%, #8ce3ff 50%);
+                  }                 
+
+
+
