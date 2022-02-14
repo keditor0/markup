@@ -61,9 +61,6 @@ inWrap.prepend(linkarea);
 var btn = inWrap.find('button');
 btn.prependTo(linkarea);
 
-// before
-// after
-// append / appendTo
-// prepend / prependTo
+ 
 
 })(jQuery);
