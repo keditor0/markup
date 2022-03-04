@@ -1,7 +1,0 @@
-/* main_page/e_ps.css */
-
-
-@media screen and (min-width:1440px){
-  /* 기준 디바이스 크기: 1440px */
-body {background-color: var(--yellow_01);}
-}
