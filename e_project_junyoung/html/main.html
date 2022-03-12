@@ -1,53 +1,261 @@
 <!DOCTYPE html>
-<!-- main.html -->
-<html lang="ko-KR">
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet" href="../css/common/reset.css">
-  <link rel="stylesheet" href="../css/common/common.css">
-  <link rel="stylesheet" href="../css/src/main.css">
-  <title>포트폴리오</title>
-</head>
-<body>
-  <div id="wrap">
-    <div id="headBox">
-      <div class="area_haed">
-        <h1 id="logo">logo</h1>
-        <nav id="navBox">
-          <h2 class="blind">page navigation</h2> 
-          <div class="unb">
-            <h3 class="blind">사용자 설정 네이게이션</h3>
-            <dt>
-              <dd>nav_1</dd>
-              <dd>nav_2</dd>
-              <dd>nav_3</dd>
-              <dd>nav_4</dd>
-            </dt>
-            
-            <dt>
-              <dd>unb_01</dd>
-              <dd>unb_02</dd>
-              <dd>unb_03</dd>
-              <dd>unb_04</dd>
-            </dt>
+<!-- main.html-->
+<html lang="ko-KR" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+
+    <link rel="stylesheet" href="../css/src/main.css">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    
+
+    <title>웹기초</title>
+  </head>
+  <body>
+    <div id="wrap">
+    
+      <header id="headBox">
+        <div class="area_head">
+          <h1 id="logo" class="blind_area">
+            <a href="../index.html" title="onion content">
+              <span>onion</span>
+            </a>
+          </h1>
+          <nav id="navBox">
+           
+            <div class="gnb">
+              <h2 class="blind">페이지 전체 네비게이션</h3>
+            <div class="accor2">    
+              <ul class="clearfix">
+                <li><a href="./contents.html">contents</a></li>
+                <li><a href="./trend_letter.html">trend letter</a></li>
+                <li><a href="./dictionary.html">dictionary</a></li>
+                <li>
+                  <div class="nav_title">
+                  <button type="button">news</button>
+                  </div>  
+                  <div class="sub_list">
+                    <a href="./news.html">전체보기(최신순)</a>
+                    <a href="#">주제별로 보기</a>
+                    <a href="#">요즘뜨는 콘텐츠</a>
+                    <a href="#">가장 핫한 콘텐츠</a>
+                  </div>
+                </li>
+              </ul>
+            </div>      
           </div>
-
-          <div class="gnb">
-            <h3 class="blind">로그인 버튼</h3>
-            <button>로그인</button>
-            <a href="#">돋보기</a>
-           </div>
-          
-        </nav>
-      </div>
-    </div>
+            <h2 class="blind">page navigation</h2>
+            <div class="unb">
+              <h3 class="blind">사용자 설정 네비게이션</h3>
+              <ul class="clearfix">
+                <li><a href="./login.html">log in</a></li>
+                <li><a href="#">join</a></li>
+              </ul>
+            </div>
 
 
-  </div><!-- wrap-->
+
+          </nav>
+        </div>
+      </header><!-- // #headBox -->
+      
+      <section id="slideBox">
+        <h2 class="blind">주요 광고영역</h2>
+        <div class="slide_btn blind_area">
+          <button type="button" class="next"><span>다음 내용 보기</span></button>
+          <button type="button" class="prev"><span>이전 내용 보기</span></button>
+        </div>
+        <div class="slide_area">
+          <div id="adCon_01" class="slide_content">
+            <div class="slide_content_part">
+              <h3>요즘 트렌드</h3>
+              <p>MZ세대가 공부하는 특급 비결</p>
+              <div class="link">
+                <a href="#">
+                  바로가기
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <figure class="slide_img_part">
+              <figcaption class="blind">슬라이드 부연 제목</figcaption>
+              <div class="slide_01">
+                <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section><!-- // #slideBox-->
+       
+
+
+      <article id="newBox">
+        <h2 class="area_title">관심 키워드로 콘텐츠 찾기</h2>
+        <div class="search_area">
+          <ul>
+            <li><a href="#">레트로</a></li>
+            <li><a href="#">인플루언서</a></li>
+            <li><a href="#">틱톡</a></li>
+            <li><a href="#">인테리어</a></li>
+            <li><a href="#">숏폼</a></li>
+            <li><a href="#">ESG</a></li>
+            <li><a href="#">SNS마케팅</a></li>
+            <li><a href="#">굿즈</a></li>
+            <li><a href="#">이커머스</a></li>
+            <li><a href="#">리스크관리<a></a></li>
+          </ul>
+          <ul>
+            <li><a href="#">10대트렌드</a></li>
+            <li><a href="#">유행어</a></li>
+            <li><a href="#">밈</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">페르소나</a></li>
+            <li><a href="#">메타버스</a></li>
+            <li><a href="#">모델섭외</a></li>
+            <li><a href="#">덕질문화</a></li>
+            <li><a href="#">소비트렌드</a></li>
+            <li><a href="#">해외트렌드<a></a></li>
+          </ul>
+        </div>
+        
+        
  
-</body>
+      </article><!-- // #newBox -->
+      
+
+
+      <section id="subBox">
+        <div class="max_width_01 area">
+          <div class="sub_area">
+            <h2>양파 멤버십</h2>
+            <p>안보면 뒤처지는 양파 콘텐츠 멤버십으로 따라잡으세요</p>
+            <div class="sub_area_btn">
+              <a href="member.html">가입 바로가기</a>
+              <a href="login.html">한달 무료체험</a>              
+            </div>
+          </div>
+          
+          <div class="sub_area_img">
+            <span class="blind">이미지 영역</span>
+          </div>
+        </div>
+      </section><!-- // #subBox -->
+      
+
+      
+        
+        <article id="bestBox">
+          <div class="part">
+            <div class="ex_wrap slide_set">
+              
+              
+              <div class="indicator">
+                <ul>
+                  <li class="action"><a href="#slideT_01"><span class="blind">선택된 광고 01에 대한 내용을 요약 설명</span></a></li>
+                  <li><a href="#slideT_02"><span class="blind">선택된 광고 02에 대한 내용을 요약 설명</span></a></li>
+                  <li><a href="#slideT_03"><span class="blind">선택된 광고 03에 대한 내용을 요약 설명</span></a></li>
+                  <li><a href="#slideT_04"><span class="blind">선택된 광고 04에 대한 내용을 요약 설명</span></a></li>
+                  <li><a href="#slideT_05"><span class="blind">선택된 광고 05에 대한 내용을 요약 설명</span></a></li>
+                </ul>
+              </div>
+        
+              <div class="slide">
+                <h2 class="best_area">인기 콘텐츠</h2>
+                <div class="slide_wrapper horizontal_slide">
+                  <div id="slideT_01" class="slide_con_01"><span class="blind">하루 15분 다이어트 챌린지</span></div>
+                  <div id="slideT_02" class="slide_con_02"><span class="blind">어버이날 꽃다발 만들기</span></div>
+                  <div id="slideT_03" class="slide_con_03"><span class="blind">왁싱 정보</span></div>
+                  <div id="slideT_04" class="slide_con_04"><span class="blind">베스트 넷플릭스 시리즈</span></div>
+                  <div id="slideT_05" class="slide_con_05"><span class="blind">배달투잡 정보</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </article><!-- // #bestBox -->
+      
+
+      <article id="galleryBox">
+        <h2 class="max_width_01 area_title">새로 나온 콘텐츠</h2>
+
+        <div class="max_width_01 area_content">
+          <div class="gallery_content_1">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_2">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_3">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_4">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_5">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_6">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+         
+        
+            
+          </div> 
+        </div>
+      </article><!-- // #galleryBox -->
+         
+      <footer id="footBox">
+        <div class="max_width_01 area_foot">
+          <h2 class="info_logo"><span class="blind">onion 회사 정보</span></h2>
+          <div class="info_company clearfix">
+            <div class="company_content">
+              <h3 class="blind">info_company</h3>
+              <ul class="list_corp">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">운영정책</a></li>
+                <li><a href="#">권리침해신고안내</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+
+              <div class="foot_info">
+                <p>서울특별시 강남구 논현동 양파 MEGA빌딩(서울특별시 강남구 논현동 123-20)
+                  <br />
+                  tel:02-823-2222 | fax: 02-040-1114
+                  <br />
+                  사업자등록번호:100-20-00300 |통신판매업 신고 : 강남 제 123500호
+                  <br />
+                  대표이사 :김양파
+                </p>
+               </div>
+               <div class="foot_info1">
+                 <p>coffinx Corp. All rights reserved.</p>
+               </div>
+              </address>
+            </div><!-- // .company_content -->
+
+            
+          </div>
+        </div>
+      </footer><!-- // #footBox -->
+    </div><!-- // #wrap -->
+
+  <!-- javascript -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../ie/modernizr-custom.js"></script>
+  <script src="../js/src/b_02_slide_horizontal_indicator.js"></script>
+  <script src="../js/src/b_02_slide_horizontal_btn.js"></script>
+  <script src="../js/src/accordion.js"></script>
+  </body>
 </html>
