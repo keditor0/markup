@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
@@ -15,13 +14,15 @@
     <link rel="stylesheet" href="../css/common/common.css">
 
     <link rel="stylesheet" href="../css/src/main.css">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
     
 
     <title>웹기초</title>
   </head>
   <body>
     <div id="wrap">
-    
+<!-- headBox_______________________________________________________________ -->
       <header id="headBox">
         <div class="area_head">
           <h1 id="logo" class="blind_area">
@@ -32,15 +33,26 @@
           <nav id="navBox">
            
             <div class="gnb">
-              <h3 class="blind">페이지 전체 네비게이션</h3>
+              <h2 class="blind">페이지 전체 네비게이션</h3>
+            <div class="accor2">    
               <ul class="clearfix">
                 <li><a href="./contents.html">contents</a></li>
                 <li><a href="./trend_letter.html">trend letter</a></li>
                 <li><a href="./dictionary.html">dictionary</a></li>
-                <li><a href="./news.html">news</a></li>
+                <li>
+                  <div class="nav_title">
+                  <button type="button">news</button>
+                  </div>  
+                  <div class="sub_list">
+                    <a href="./news.html">전체보기(최신순)</a>
+                    <a href="#">주제별로 보기</a>
+                    <a href="#">요즘뜨는 콘텐츠</a>
+                    <a href="#">가장 핫한 콘텐츠</a>
+                  </div>
+                </li>
               </ul>
-            </div>
-
+            </div>      
+          </div>
             <h2 class="blind">page navigation</h2>
             <div class="unb">
               <h3 class="blind">사용자 설정 네비게이션</h3>
@@ -50,15 +62,18 @@
               </ul>
             </div>
 
+
+
           </nav>
         </div>
       </header><!-- // #headBox -->
       
+<!--slideBox______________________________________________________________  -->
       <section id="slideBox">
         <h2 class="blind">주요 광고영역</h2>
         <div class="slide_btn blind_area">
-          <button type="button" class="next"><span>다음 내용 보기</span></button>
-          <button type="button" class="prev"><span>이전 내용 보기</span></button>
+          <button type="button" class="next"><span>다음 </span></button>
+          <button type="button" class="prev"><span>이전 </span></button>
         </div>
         <div class="slide_area">
           <div id="adCon_01" class="slide_content">
@@ -77,13 +92,25 @@
               <div class="slide_01">
                 <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
               </div>
+              <div class="slide_02">
+                <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+              </div>
+              <div class="slide_03">
+                <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+              </div>
+              <div class="slide_04">
+                <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+              </div>
+              <div class="slide_05">
+                <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+              </div>
             </figure>
           </div>
         </div>
       </section><!-- // #slideBox-->
        
 
-
+<!-- newBox___________________________________________________________________ -->
       <article id="newBox">
         <h2 class="area_title">관심 키워드로 콘텐츠 찾기</h2>
         <div class="search_area">
@@ -118,15 +145,15 @@
       </article><!-- // #newBox -->
       
 
-
+<!-- subBox___________________________________________________________________ -->
       <section id="subBox">
         <div class="max_width_01 area">
           <div class="sub_area">
             <h2>양파 멤버십</h2>
             <p>안보면 뒤처지는 양파 콘텐츠 멤버십으로 따라잡으세요</p>
             <div class="sub_area_btn">
-              <a href="#">가입 바로가기</a>
-              <a href="#">한달 무료체험</a>              
+              <a href="member.html">가입 바로가기</a>
+              <a href="login.html">한달 무료체험</a>              
             </div>
           </div>
           
@@ -138,7 +165,7 @@
       
 
       
-        
+<!--bestBox__________________________________________________________________  -->
         <article id="bestBox">
           <div class="part">
             <div class="ex_wrap slide_set">
@@ -169,46 +196,40 @@
         
       </article><!-- // #bestBox -->
       
-
+<!-- galleryBox____________________________________________________________ -->
       <article id="galleryBox">
         <h2 class="max_width_01 area_title">새로 나온 콘텐츠</h2>
 
         <div class="max_width_01 area_content">
-          <div class="gallery_main_content">
+          <div class="gallery_content_1">
             <span class="blind">대표 이미지 설명</span>
           </div>
-          <ul class="gallery_list">
-            <li><button type="button">list내용 _ 01</button></li>
-            <li><button type="button">list내용 _ 02</button></li>
-            <li><button type="button">list내용 _ 03</button></li>
-            <li><button type="button">list내용 _ 04</button></li>
-          </ul> 
+          <div class="gallery_content_2">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_3">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_4">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_5">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+          <div class="gallery_content_6">
+            <span class="blind">대표 이미지 설명</span>
+          </div>
+         
+        
+            
+          </div> 
         </div>
       </article><!-- // #galleryBox -->
-      
-      <aside id="sponsorBox">
-        <h2 class="blind">후원사</h2>
-        <div class="max_width_01 sponsor_area blind_area">
-          <!-- sponsor_area -->
-          <ul>
-            <li><a href="#"><span>후원사_01</span></a></li>
-            <li><a href="#"><span>후원사_02</span></a></li>
-            <li><a href="#"><span>후원사_03</span></a></li>
-            <li><a href="#"><span>후원사_04</span></a></li>
-            <li><a href="#"><span>후원사_05</span></a></li>
-            <li><a href="#"><span>후원사_06</span></a></li>
-            <li><a href="#"><span>후원사_07</span></a></li>
-            <li><a href="#"><span>후원사_08</span></a></li>
-            <li><a href="#"><span>후원사_09</span></a></li>
-            <li><a href="#"><span>후원사_10</span></a></li>
-            <li><a href="#"><span>후원사_11</span></a></li>
-          </ul>
-        </div>
-      </aside><!-- // #sponsorBox -->
-      
+         
+ <!--footBox____________________________________________________________________  -->
       <footer id="footBox">
         <div class="max_width_01 area_foot">
-          <h2 class="info_logo"><span class="blind">오삼커피 회사 정보</span></h2>
+          <h2 class="info_logo"><span class="blind">onion 회사 정보</span></h2>
           <div class="info_company clearfix">
             <div class="company_content">
               <h3 class="blind">info_company</h3>
@@ -221,30 +242,23 @@
                 <li><a href="#">Contact Us</a></li>
               </ul>
 
-              
-                <p>© coffinx Corp. All rights reserved.</p>
+              <div class="foot_info">
+                <p>서울특별시 강남구 논현동 양파 MEGA빌딩(서울특별시 강남구 논현동 123-20)
+                  <br />
+                  tel:02-823-2222 | fax: 02-040-1114
+                  <br />
+                  사업자등록번호:100-20-00300 |통신판매업 신고 : 강남 제 123500호
+                  <br />
+                  대표이사 :김양파
+                </p>
+               </div>
+               <div class="foot_info1">
+                 <p>coffinx Corp. All rights reserved.</p>
+               </div>
               </address>
             </div><!-- // .company_content -->
 
-            <div class="social_family">
-              <h3 class="blind">social list and family site</h3>
-              <div class="social">
-                <ul>
-                  <li><a href="#">sns_01</a></li>
-                  <li><a href="#">sns_02</a></li>
-                  <li><a href="#">sns_03</a></li>
-                </ul>
-              </div>              
-              <div class="family_site">
-                <label for="site" class="blind">family site</label>
-                <select name="" id="site">
-                  <option value="#">site_01</option>
-                  <option value="#">site_02</option>
-                  <option value="#">site_03</option>
-                </select>
-              </div>
-              <div class="authentication"></div>
-            </div><!-- // .social_family -->
+            
           </div>
         </div>
       </footer><!-- // #footBox -->
@@ -256,6 +270,6 @@
   <script src="../ie/modernizr-custom.js"></script>
   <script src="../js/src/b_02_slide_horizontal_indicator.js"></script>
   <script src="../js/src/b_02_slide_horizontal_btn.js"></script>
-
+  <script src="../js/src/accordion.js"></script>
   </body>
 </html>

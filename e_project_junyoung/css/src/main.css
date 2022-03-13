@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* main.css */
 
+/* main.css */
 /* design ========================================== */
 #wrap {
   width: 1440px;
@@ -136,94 +136,55 @@
     margin-top: 15px;
   }
   
-/* #slideBox ___________________________________________________________ */
-#slideBox   { 
-position: relative;
-width: 100%; height: 500px; box-sizing: border-box;
-/* background-color: #aaa; */
-}
 
-/* ---------- */
-.slide_btn {
-  position: absolute; top: 0; bottom: 0; left:0; right:0; margin:auto;
-  width:100%; min-width:940px; max-width:1440px; height:0;
-}
 
-.slide_btn button{ 
-  width:60px; height:40px; 
-  background-image: url("../../img/main_page/indi_btn.png");
-  background-repeat: no-repeat;   
-  }
-.slide_btn button:hover { background-color: #fff; }
-.slide_btn button:focus { outline:2px solid #333;}
-  
-.slide_btn .next {float:left; background-position: -2px -2px;}
-.slide_btn .prev {float:right; background-position: -76px -2px;}
+/* slideBox---------------------------------------------------------------------- */
 
-/* ---------- */
-.slide_area {
-  width: 100%; height: 100%; padding-top: 60px; box-sizing: border-box;
-  /*
-  background-image: url("../../img/main_page/slideBox/slide_01_bg.png");
-  background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
-  */
+.slide1 {
+  --slide-len:5; 
+  overflow: hidden; /* overflow: hidden을 위에 ex_wrap에 옮겨 쓰면 일부분 보이게 */
+  width: 100%; height:450px; margin:auto; background-color: #fff; }
+
+.horizontal_slide1 {position: relative; /*left:-100%;*/ width:500%; width:calc(100% * var(--slide-len)); height: 100%; }
+.horizontal_slide1 > div{float:left; width:20%; width: calc(100% / var(--slide-len));  height:450px; }
+/* ------------------------------------------------------------------------- */
+.slide_btn1 {
+  position: absolute; top: 40%; left: 0; z-index:200; width:100%; height:0; 
+  padding:0 30px; font-size: 8px; box-sizing:border-box; }
+.slide_btn1 button {width:40px; height:40px; background-color: #ccc; border-radius:10px;}
+.next1 { float:right; }
+.prev1 { float:left; }
+
+/* ------------------------------------------------------------------------- */
+
+.slide_con1_01 {
+  background-image:url(../../img/main_page/slideBox/001.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
-.slide_content { 
-  position: relative;
-  width:auto; height: 400px; 
-  margin-left: 5%;
-  }
-  .slide_content_part {
-    position: absolute; top: 0; bottom: 0; left: 60%;
-    width:300px; height: 264px;
-    margin:auto;
-    /* background: #fff; */
-  }
+.slide_con1_02 {
+  background-image:url(../../img/main_page/slideBox/002.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.slide_con1_03 {
+  background-image:url(../../img/main_page/slideBox/003.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.slide_con1_04 {
+  background-image:url(../../img/main_page/slideBox/004.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.slide_con1_05 {
+  background-image:url(../../img/main_page/slideBox/005.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+} 
+
+
   
-  .slide_content_part h3 {
-    width: 100%; height: 60px;
-    margin-bottom: 5px;
-    font-size: 2.5rem; font-weight: 700;
-    line-height:60px; color:rgb(1, 160, 9);
-    text-transform: capitalize;
-  }
-  .slide_content_part p {
-    width: 100%; height:140px;
-    margin-bottom: 5px;
-    font-size:2rem; color:#505050;
-    line-height:150%;
-  }
-  
-  .slide_content_part .link {
-    width: 220px; height: 50px;
-  }
-  .link a {
-    display: block; width: 100%; height: 100%;
-    padding:0 18px; box-sizing: border-box;
-    line-height: 50px; color:#fff;
-    font-size:22px; font-size:1.375rem; font-weight: 700;
-    background-color: #1A5D54;
-  }
-  .link i {float:right; margin-top:15px;}
-  
-  .link a:hover { text-decoration: underline;}
-  .link a:focus { outline:4px solid #FFBD55;}
-  
-  .slide_img_part {
-    float:right
-    width:640px; height:400px;
-    
-  }
-  .slide_img_part > div {
-    width: 640px; height: 100%; 
-    background-repeat: no-repeat; background-position: 0 0;
-    background-size: contain;
-    
-  }
-  .slide_01 {
-    background-image: url("../../img/main_page/slideBox/slide_01_image.png");
-     
-  }
 
   
 /* #newBox ____________________________________________  */
@@ -335,20 +296,19 @@ width: 100%; height: 500px; box-sizing: border-box;
   font-size:2.5rem; }
 
 /* ---------------------------------------------------------------------- */
-.slide {
+.slide2 {
   --slide-len:5;
   overflow: hidden; 
   width: 800px; height:450px; margin:auto; background-color: #fff; }
 
-.horizontal_slide {position: relative; width:500%; width:calc(100% * var(--slide-len)); height: 100%;}
-.horizontal_slide > div{float:left; width:20%; width: calc(100% / var(--slide-len));  height:450px; }
+.horizontal_slide2 {position: relative; width:500%; width:calc(100% * var(--slide-len)); height: 100%;}
+.horizontal_slide2 > div{float:left; width:20%; width: calc(100% / var(--slide-len));  height:450px; }
 /* ------------------------------------------------------------------------- */
 .slide_btn {
   position: absolute; top: 50%; left: 0; width:100%; height:0; 
   padding:0 30px; font-size: 8px; box-sizing:border-box; }
 .slide_btn button {width:30px; height:40px; background-color: #ccc; border-radius:10px;}
-.next { float:right; }
-.prev { float:left; }
+
 /* ------------------------------------------------------------------------- */
 .indicator { 
   position: absolute; z-index:200; bottom:15px; left:0; 

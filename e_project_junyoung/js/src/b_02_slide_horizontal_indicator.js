@@ -9,13 +9,13 @@
    */
   
   // 변수
-  var slide = $('.slide_set');
+  var slide = $('.slide_set2');
   var indicator = slide.find('.indicator');
   var indiLi = indicator.find('li');
   var indiLink = indiLi.children('a');
   
-  var slide = slide.find('.slide');
-  var horizonSlide = slide.children('.horizontal_slide');
+  var slide = slide.find('.slide2');
+  var horizonSlide = slide.children('.horizontal_slide2');
   
   var i = 0;
   var timed = 500;

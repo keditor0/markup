@@ -9,12 +9,12 @@
    */
   
   // 변수 -----------------------------------------
-  var slideSet = $('.slide_set');
-  var btnArea = slideSet.find('.slide_btn');
-  var nextBtn = btnArea.find('.next');
-  var prevBtn = btnArea.find('.prev');
+  var slideSet = $('.slide_set_1');
+  var btnArea = slideSet.find('.slide_btn1');
+  var nextBtn = btnArea.find('.next1');
+  var prevBtn = btnArea.find('.prev1');
   
-  var horizontal = slideSet.find('.horizontal_slide');
+  var horizontal = slideSet.find('.horizontal_slide1');
   var horizontalDiv = horizontal.children('div');
   var originDivLen = horizontalDiv.length;
   
