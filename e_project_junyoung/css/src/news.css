@@ -1,0 +1,19 @@
+@import url("../page/a_wrap.css");
+@import url("../page/b_headBox.css");
+@import url("../page/b_footBox.css");
+
+
+/* -------------------------------------------------------- */
+
+  .contents_area {
+  width: 1440px;
+  height:auto; min-height:500px;
+  margin:auto; padding-top:100px;
+  }
+.con_01{
+  width: 800px; height: 1100px;
+  background-size: cover;
+  box-shadow:30px 25px 0 #EFEFEF;
+  background-image: url(../../img/contents/006.png);
+  background-repeat: no-repeat;
+}
